@@ -1,0 +1,22 @@
+:root {
+  color-scheme: light dark;
+  --texto: #1a1a1a;
+  --fundo: #ffffff;
+  --suave: #5b6470;
+  --link: #1b6fd6;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --texto: #ececec; --fundo: #121417; --suave: #9aa3ad; --link: #5aa7ff; }
+}
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 1.8rem; line-height: 1.25; margin-bottom: 4px; }
+h2 { font-size: 1.15rem; margin-top: 2rem; }
+.sub, .rodape { color: var(--suave); font-size: 0.9rem; }
+.rodape { margin-top: 3rem; }
+a { color: var(--link); }
